@@ -11,6 +11,10 @@
       url = "github:cachix/git-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -18,7 +22,8 @@
     nixpkgs,
     home-manager,
     pre-commit-hooks,
-  }: let
+    ...
+  } @ inputs: let
     pre-commit-check = pre-commit-hooks.lib.x86_64-linux.run {
       src = ./.;
       hooks = {
@@ -35,6 +40,7 @@
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
+            extraSpecialArgs = {inherit inputs;};
             users.marika = import ./user/home.nix;
           };
         }
