@@ -42,6 +42,9 @@ in {
           "$mod, Return, exec, foot"
 
           "$mod, Q, killactive"
+
+          "$mod, Comma, workspace, e-1"
+          "$mod, Period, workspace, e+1"
         ]
         ++ builtins.concatLists (builtins.genList (i: let
             ws = builtins.toString (i + 1);
