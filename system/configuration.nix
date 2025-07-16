@@ -27,6 +27,7 @@
   };
 
   users.users.marika = {
+    shell = pkgs.fish;
     isNormalUser = true;
     extraGroups = ["networkmanager" "wheel"];
   };
