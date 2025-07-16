@@ -9,6 +9,7 @@
 
     ./boot.nix
     ./filesystems.nix
+    ./fonts
     ./hardware
     ./i18n.nix
     ./networking.nix
