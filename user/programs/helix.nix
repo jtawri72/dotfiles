@@ -14,6 +14,8 @@
         line-number = "relative";
         auto-format = false;
         bufferline = "multiple";
+        color-modes = true;
+        end-of-line-diagnostics = "hint";
       };
     };
   };
