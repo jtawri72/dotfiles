@@ -10,5 +10,6 @@
     ./git.nix
     ./helix.nix
     ./hyprland.nix
+    ./starship.nix
   ];
 }
