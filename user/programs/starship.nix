@@ -31,6 +31,11 @@
         deleted = "[ $count](bold red) ";
         style = "bold purple";
       };
+
+      nix_shell = {
+        format = ''via [$symbol$name \($state\)]($style) '';
+        symbol = " ";
+      };
     };
   };
 }
