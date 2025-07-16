@@ -8,6 +8,13 @@
     extraPackages = with pkgs; [
       nil
     ];
-    settings.theme = "nord";
+    settings = {
+      theme = "nord";
+      editor = {
+        line-number = "relative";
+        auto-format = false;
+        bufferline = "multiple";
+      };
+    };
   };
 }
