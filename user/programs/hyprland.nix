@@ -16,6 +16,21 @@ in {
         "HDMI-A-1,1920x1080@60,0x0,1"
       ];
 
+      general = {
+        border_size = 2;
+        "col.active_border" = "rgb(8fbcbb)";
+        "col.inactive_border" = "rgb(3b4252)";
+
+        gaps_in = 4;
+        gaps_out = 4;
+      };
+
+      decoration = {
+        rounding = 4;
+        blur.enabled = true;
+        shadow.enabled = false;
+      };
+
       ecosystem = {
         no_update_news = true;
         no_donation_nag = true;
