@@ -45,6 +45,16 @@ in {
 
           "$mod, Comma, workspace, e-1"
           "$mod, Period, workspace, e+1"
+
+          "$mod, H, movefocus, l"
+          "$mod, J, movefocus, d"
+          "$mod, K, movefocus, u"
+          "$mod, L, movefocus, r"
+
+          "$modShift, H, movewindow, l"
+          "$modShift, J, movewindow, d"
+          "$modShift, K, movewindow, u"
+          "$modShift, L, movewindow, r"
         ]
         ++ builtins.concatLists (builtins.genList (i: let
             ws = builtins.toString (i + 1);
