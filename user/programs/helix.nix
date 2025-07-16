@@ -17,6 +17,10 @@
         color-modes = true;
         end-of-line-diagnostics = "hint";
         lsp.display-progress-messages = true;
+        indent-guides = {
+          render = true;
+          character = "▏";
+        };
       };
     };
   };
