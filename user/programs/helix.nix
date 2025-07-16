@@ -8,5 +8,6 @@
     extraPackages = with pkgs; [
       nil
     ];
+    settings.theme = "nord";
   };
 }
