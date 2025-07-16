@@ -16,6 +16,21 @@
       };
 
       git_branch.symbol = " ";
+
+      git_status = {
+        format = ''([\[ $all_status$ahead_behind\]]($style) )'';
+        conflicted = "[ $count](bold red) ";
+        ahead = "[ $count](bold blue) ";
+        behind = "[ $count](bold red) ";
+        diverged = "[](bold red) ";
+        untracked = "[ $count](bold yellow) ";
+        stashed = "[ $count](bold red) ";
+        modified = "[ $count](bold yellow) ";
+        staged = "[ $count](bold green) ";
+        renamed = "[ $count](bold green) ";
+        deleted = "[ $count](bold red) ";
+        style = "bold purple";
+      };
     };
   };
 }
