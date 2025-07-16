@@ -36,6 +36,15 @@ in {
         no_donation_nag = true;
       };
 
+      animations = {
+        enabled = true;
+        animation = [
+          "workspaces, 0"
+          "global, 1, 3, default"
+          "windows, 1, 3, default, popin 91%"
+        ];
+      };
+
       bind =
         [
           "$mod, B, exec, firefox"
