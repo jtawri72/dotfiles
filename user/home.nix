@@ -12,5 +12,8 @@
     username = "marika";
     homeDirectory = "/home/marika";
     stateVersion = "25.05";
+    packages = with pkgs; [
+      qbittorrent
+    ];
   };
 }
