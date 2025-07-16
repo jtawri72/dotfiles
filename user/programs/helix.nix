@@ -16,6 +16,7 @@
         bufferline = "multiple";
         color-modes = true;
         end-of-line-diagnostics = "hint";
+        lsp.display-progress-messages = true;
       };
     };
   };
